@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  X'sAndO's
 //
 //  Created by Robert Jeffers on 6/25/20.
@@ -8,15 +8,9 @@
 
 import UIKit
 
-public var pOrC = 0 //if 1 it is PvC if 2 it is PvP
-
-class ViewController: UIViewController {
-    
+class GameViewController: UIViewController {
 
     @IBOutlet var backgroundGradientView: UIView!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,20 +33,15 @@ class ViewController: UIViewController {
         return false
     }
     
-    @IBAction func playerVSComputerTouched(_ sender: Any) {
-        
-        pOrC = 1
-        
-        performSegue(withIdentifier: "gametime", sender: self)
-        
-    }
-    
-    @IBAction func playerVSPlayerTouched(_ sender: Any) {
-        
-        pOrC = 2
-        performSegue(withIdentifier: "gametime", sender: self)
-        
-    }
-    
-}
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

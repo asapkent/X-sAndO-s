@@ -16,6 +16,7 @@
 		9F20117724A56ABD00750496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F20117524A56ABD00750496 /* LaunchScreen.storyboard */; };
 		9F20118224A56ABE00750496 /* X_sAndO_sTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20118124A56ABE00750496 /* X_sAndO_sTests.swift */; };
 		9F20118D24A56ABE00750496 /* X_sAndO_sUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20118C24A56ABE00750496 /* X_sAndO_sUITests.swift */; };
+		9F20119B24A5856C00750496 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20119A24A5856C00750496 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9F20118824A56ABE00750496 /* X'sAndO'sUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X'sAndO'sUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F20118C24A56ABE00750496 /* X_sAndO_sUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_sAndO_sUITests.swift; sourceTree = "<group>"; };
 		9F20118E24A56ABE00750496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F20119A24A5856C00750496 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				9F20116924A56AB900750496 /* SceneDelegate.swift */,
 				9F20116B24A56AB900750496 /* ViewController.swift */,
 				9F20116D24A56AB900750496 /* Main.storyboard */,
+				9F20119A24A5856C00750496 /* GameViewController.swift */,
 				9F20117324A56ABD00750496 /* Assets.xcassets */,
 				9F20117524A56ABD00750496 /* LaunchScreen.storyboard */,
 				9F20117824A56ABD00750496 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F20119B24A5856C00750496 /* GameViewController.swift in Sources */,
 				9F20117224A56AB900750496 /* X_sAndO_s.xcdatamodeld in Sources */,
 				9F20116C24A56AB900750496 /* ViewController.swift in Sources */,
 				9F20116824A56AB900750496 /* AppDelegate.swift in Sources */,
