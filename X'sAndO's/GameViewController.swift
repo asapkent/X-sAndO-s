@@ -10,7 +10,12 @@ import UIKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var playersTurnLabel: UILabel!
     @IBOutlet var backgroundGradientView: UIView!
+    @IBOutlet weak var player1Label: UILabel!
+    @IBOutlet weak var playervsLabel: UILabel!
+    @IBOutlet weak var player2Label: UILabel!
+    @IBOutlet weak var letsPlayLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +39,8 @@ class GameViewController: UIViewController {
     }
     
 
+    @IBAction func xOrOButtonClicked(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
@@ -43,5 +50,9 @@ class GameViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func backButtonPressed(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

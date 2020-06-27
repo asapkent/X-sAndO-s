@@ -103,14 +103,23 @@
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIE-N8-bg3">
                                                                 <rect key="frame" x="0.0" y="102" width="131.5" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="qWS-7l-kFH"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7C-eM-CCQ">
                                                                 <rect key="frame" x="131.5" y="102" width="131" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="fOU-uB-Oyx"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-gC-av5">
                                                                 <rect key="frame" x="262.5" y="102" width="131.5" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="SUn-rk-qFc"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -120,14 +129,23 @@
                                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-fT-c6A">
                                                                 <rect key="frame" x="0.0" y="0.0" width="131.5" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="toT-ls-Wbt"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2Y-QM-2I7">
                                                                 <rect key="frame" x="131.5" y="0.0" width="131" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="7NY-MX-7jT"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOC-0y-7KF">
                                                                 <rect key="frame" x="262.5" y="0.0" width="131.5" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="YLH-ll-Oa8"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -137,14 +155,23 @@
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-As-BMT">
                                                                 <rect key="frame" x="0.0" y="0.0" width="131.5" height="110"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="6NK-gb-se3"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ0-sV-Ac6">
                                                                 <rect key="frame" x="131.5" y="0.0" width="131" height="110"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="jTV-y3-9MT"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVo-u9-xYt">
                                                                 <rect key="frame" x="262.5" y="0.0" width="131.5" height="110"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="xOrOButtonClicked:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="ts5-Xa-Ke1"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -196,23 +223,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79t-xK-6qE">
+                                <rect key="frame" x="10" y="10" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="llZ-6W-Pfi" eventType="touchUpInside" id="zlf-kg-gzH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets Play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJI-2C-GpS">
+                                <rect key="frame" x="30" y="648" width="354" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dSd-bO-ZcB" firstAttribute="trailing" secondItem="q3P-zt-MdZ" secondAttribute="trailing" constant="300" id="0Cm-9E-0js"/>
                             <constraint firstItem="F0t-15-8Bg" firstAttribute="leading" secondItem="dSd-bO-ZcB" secondAttribute="leading" constant="20" id="4sF-Zb-UrK"/>
                             <constraint firstItem="Kym-yX-E27" firstAttribute="leading" secondItem="dSd-bO-ZcB" secondAttribute="leading" constant="20" id="5py-TW-V9J"/>
+                            <constraint firstItem="dSd-bO-ZcB" firstAttribute="trailing" secondItem="xJI-2C-GpS" secondAttribute="trailing" constant="30" id="9y4-Px-65z"/>
                             <constraint firstItem="dSd-bO-ZcB" firstAttribute="trailing" secondItem="Kym-yX-E27" secondAttribute="trailing" constant="20" id="AhI-dF-veS"/>
                             <constraint firstItem="ORB-hR-9cg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F0t-15-8Bg" secondAttribute="trailing" constant="8" symbolic="YES" id="Dqb-sh-1ce"/>
+                            <constraint firstItem="79t-xK-6qE" firstAttribute="top" secondItem="dSd-bO-ZcB" secondAttribute="top" constant="10" id="HDn-sl-Gap"/>
                             <constraint firstItem="rDV-3O-wbI" firstAttribute="leading" secondItem="dSd-bO-ZcB" secondAttribute="leading" constant="10" id="HmR-Lq-FfI"/>
                             <constraint firstItem="Kym-yX-E27" firstAttribute="top" secondItem="dSd-bO-ZcB" secondAttribute="top" constant="20" id="Hns-BC-cg6"/>
+                            <constraint firstItem="xJI-2C-GpS" firstAttribute="leading" secondItem="dSd-bO-ZcB" secondAttribute="leading" constant="30" id="Rr3-Rn-ysT"/>
                             <constraint firstItem="rDV-3O-wbI" firstAttribute="centerY" secondItem="U3y-jg-22n" secondAttribute="centerY" id="VaQ-kL-JpF"/>
                             <constraint firstItem="dSd-bO-ZcB" firstAttribute="trailing" secondItem="rDV-3O-wbI" secondAttribute="trailing" constant="10" id="Vl7-05-q20"/>
+                            <constraint firstItem="79t-xK-6qE" firstAttribute="leading" secondItem="dSd-bO-ZcB" secondAttribute="leading" constant="10" id="WIx-3B-c32"/>
                             <constraint firstItem="dSd-bO-ZcB" firstAttribute="trailing" secondItem="ORB-hR-9cg" secondAttribute="trailing" constant="30" id="Ycl-K0-rcj"/>
                             <constraint firstItem="rDV-3O-wbI" firstAttribute="centerX" secondItem="U3y-jg-22n" secondAttribute="centerX" id="b9Y-LR-0n4"/>
                             <constraint firstItem="q3P-zt-MdZ" firstAttribute="top" secondItem="F0t-15-8Bg" secondAttribute="bottom" constant="5" id="eTm-KM-AiW"/>
                             <constraint firstItem="F0t-15-8Bg" firstAttribute="top" secondItem="Kym-yX-E27" secondAttribute="bottom" constant="25" id="im5-Qu-hfZ"/>
                             <constraint firstItem="q3P-zt-MdZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dSd-bO-ZcB" secondAttribute="leading" id="jMX-3H-e0k"/>
+                            <constraint firstItem="xJI-2C-GpS" firstAttribute="top" secondItem="rDV-3O-wbI" secondAttribute="bottom" constant="30" id="q2X-7A-J6x"/>
                             <constraint firstItem="ORB-hR-9cg" firstAttribute="top" secondItem="Kym-yX-E27" secondAttribute="bottom" constant="30" id="uFq-kO-X1o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dSd-bO-ZcB"/>
@@ -220,6 +265,11 @@
                     <navigationItem key="navigationItem" id="1lc-B9-mgI"/>
                     <connections>
                         <outlet property="backgroundGradientView" destination="U3y-jg-22n" id="y8d-Z1-1Pv"/>
+                        <outlet property="letsPlayLabel" destination="xJI-2C-GpS" id="PaZ-8B-gmC"/>
+                        <outlet property="player1Label" destination="F0t-15-8Bg" id="sZR-j4-Roz"/>
+                        <outlet property="player2Label" destination="q3P-zt-MdZ" id="DH8-Lg-eUT"/>
+                        <outlet property="playersTurnLabel" destination="ORB-hR-9cg" id="6DB-z2-YVL"/>
+                        <outlet property="playervsLabel" destination="Kym-yX-E27" id="c2m-xU-K4h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzm-df-jFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
