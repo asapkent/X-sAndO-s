@@ -16,6 +16,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var playervsLabel: UILabel!
     @IBOutlet weak var player2Label: UILabel!
     @IBOutlet weak var letsPlayLabel: UILabel!
+    
+    var matrix: [[Int]] = [[0,0,0],[0,0,0],[0,0,0]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,18 +44,29 @@ class GameViewController: UIViewController {
 
     @IBAction func xOrOButtonClicked(_ sender: Any) {
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func backButtonPressed(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    func displayMatrix(matrix: [[Int]]) {
+        var tempTag = 1
+        
+        for i in 0...2 {
+            for j in 0...2 {
+                if (matrix[i][j] == 0) {
+                    let tempButton = self.view.viewWithTag(tempTag) as? UIButton
+                    tempButton?.setBackgroundImage(nil, for: .normal)
+                } else if (matrix[i][j] == 1) {
+                    
+                } else if (matrix[i][j] == 2) {
+                    
+                } else {
+                    
+                }
+            }
+        }
     }
     
 }
