@@ -17,7 +17,12 @@ class GameViewController: UIViewController {
     @IBOutlet weak var player2Label: UILabel!
     @IBOutlet weak var letsPlayLabel: UILabel!
     
+    var whichTurn = 0 // whos turn is it to go?
+    
     var matrix: [[Int]] = [[0,0,0],[0,0,0],[0,0,0]]
+
+    var player1 = 0
+    var player2 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +40,29 @@ class GameViewController: UIViewController {
         //backgroundGradientView.layer.addSublayer(gradientLayer)
         
         backgroundGradientView.layer.insertSublayer(gradientLayer, at: 0)
+        
+        startGame()
     }
         
+    
+    func startGame() {
+        
+        matrix = [[0,0,0],[0,0,0],[0,0,0]]
+        displayMatrix(matrix: matrix)
+        
+        
+        whichTurn = Int.random(in: 1...2)
+        
+        if (whichTurn == 1) {
+           player1 = 1
+           player2 = 2
+        } else {
+            player1 = 2
+            player2 = 1
+        }
+    }
+    
+    
     override var shouldAutorotate: Bool {
         return false
     }
@@ -59,12 +85,16 @@ class GameViewController: UIViewController {
                     let tempButton = self.view.viewWithTag(tempTag) as? UIButton
                     tempButton?.setBackgroundImage(nil, for: .normal)
                 } else if (matrix[i][j] == 1) {
-                    
+                    let tempButton = self.view.viewWithTag(tempTag) as? UIButton
+                    tempButton?.setBackgroundImage(UIImage(named: "PngItem_1947638"), for: .normal)
                 } else if (matrix[i][j] == 2) {
-                    
+                    let tempButton = self.view.viewWithTag(tempTag) as? UIButton
+                    tempButton?.setBackgroundImage(UIImage(named: "PngItem_1100393"), for: .normal)
                 } else {
                     
                 }
+                
+                tempTag += 1
             }
         }
     }
