@@ -56,9 +56,19 @@ class GameViewController: UIViewController {
         if (whichTurn == 1) {
            player1 = 1
            player2 = 2
+            
+            player1Label.text = "Player1 is: X"
+            player2Label.text = "PLayer2 is: O"
+            
+            playersTurnLabel.text = "It is Player1's turn!"
         } else {
             player1 = 2
             player2 = 1
+            
+            player1Label.text = "Player1 is: O"
+            player2Label.text = "PLayer2 is: X"
+            
+            playersTurnLabel.text = "It is Player2's turn!"
         }
     }
     
@@ -69,8 +79,91 @@ class GameViewController: UIViewController {
     
 
     @IBAction func xOrOButtonClicked(_ sender: Any) {
+        
+        var tempNumber = 0
+            
+            if (whichTurn == 1) {
+                       tempNumber = player1
+                       playersTurnLabel.text = "It is Player1's turn!"
+                   } else {
+                        tempNumber = player2
+                       playersTurnLabel.text = "It is Player2's turn!"
+                   }
+            guard let button = sender as? UIButton else {
+            return
+        }
+        
+        switch button.tag {
+        case 1:
+            if (matrix[0][0] == 0 ) {
+                matrix[0][0] = tempNumber
+                nextTurn()
+            }
+        case 2:
+        if (matrix[0][1] == 0 ) {
+            matrix[0][1] = tempNumber
+            nextTurn()
+        }
+        case 3:
+        if (matrix[0][2] == 0 ) {
+            matrix[0][2] = tempNumber
+            nextTurn()
+        }
+        case 4:
+        if (matrix[1][0] == 0 ) {
+            matrix[1][0] = tempNumber
+            nextTurn()
+        }
+        case 5:
+        if (matrix[1][1] == 0 ) {
+            matrix[1][1] = tempNumber
+            nextTurn()
+        }
+        case 6:
+        if (matrix[1][2] == 0 ) {
+            matrix[1][2] = tempNumber
+            nextTurn()
+        }
+        case 7:
+        if (matrix[2][0] == 0 ) {
+            matrix[2][0] = tempNumber
+            nextTurn()
+        }
+        case 8:
+        if (matrix[2][1] == 0 ) {
+            matrix[2][1] = tempNumber
+            nextTurn()
+        }
+        case 9:
+        if (matrix[2][2] == 0 ) {
+            matrix[2][2] = tempNumber
+            nextTurn()
+        }
+        
+        default:
+            print("Errors")
+            
+        }
     }
 
+    func nextTurn() {
+        displayMatrix(matrix: matrix)
+        whoWon()
+        
+        if (whichTurn == 1) {
+            whichTurn = 2
+            playersTurnLabel.text = "Player 2's turn"
+        } else {
+            whichTurn = 1
+             playersTurnLabel.text = "Player 1's turn"
+        }
+        
+    }
+    
+    func whoWon() {
+        
+    }
+    
     @IBAction func backButtonPressed(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
