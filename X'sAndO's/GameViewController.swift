@@ -162,6 +162,40 @@ class GameViewController: UIViewController {
     
     func whoWon() {
         
+        var counter = true
+        
+        if ((matrix[0][0] == matrix[1][1]) && (matrix[1][1] == matrix[2][2])) && matrix[1][1] != 0 {
+            winner(whoWon: matrix[1][1])
+        } else if ((matrix[2][0] == matrix[1][1]) && (matrix[1][1] == matrix[0][2])) && matrix[1][1] != 0 {
+            winner(whoWon: matrix[1][1])
+        } else {
+            for i in 0...2 {
+                if ((matrix[i][0] == matrix[i][1]) && ( matrix[i][1] == matrix[i][2] && matrix[i][0] != 0 )) {
+                    winner(whoWon: matrix[i][0])
+                    counter = false
+                }
+            }
+            
+            if counter {
+                for i in 0...2 {
+                    if ((matrix[0][i] == matrix[1][i]) && ( matrix[1][i] == matrix[2][i] && matrix[0][i] != 0 )) {
+                        winner(whoWon: matrix[0][i])
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    func winner(whoWon: Int) {
+     
+        if (whoWon == player1 ) {
+            letsPlayLabel.text = "Player 1 has won!"
+        } else if (whoWon == player2) {
+            letsPlayLabel.text = "Player 2 has won!"
+        } else {
+        
+        }
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
